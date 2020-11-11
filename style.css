@@ -20,107 +20,108 @@ main {
 }
 
 .container {
-
-  width: 80%;
+  width: 60%;
 }
 
 .inner-container {
-    
   font-family: "Press Start 2P", cursive;
 }
 
-.box-container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    height: 490px;
-    border: 1px solid rgb(119, 119, 133);
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 500px;
+  border: 9px ridge rgb(119, 119, 133);
+  margin: auto;
+  padding: 6px;
+}
+
+.box {
+  width: 22%;
+  height: 100px;
+  padding-bottom: 5px;
+  border: 1px solid white;
+  border-radius: 5%;
+  margin: auto;
+  opacity: 0;
+  text-align: center;
+  line-height: 700%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 51%;
+}
+
+.active {
+  cursor: pointer;
+  opacity: 0.7;
+  background-image: url(https://st3.depositphotos.com/7843760/13017/v/950/depositphotos_130175624-stock-illustration-cartoon-cute-mole.jpg);
+  transform: translateY(-20px);
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.score-board {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.time {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: ; */
+}
+
+.start-button {
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  width: 13%;
+  margin: auto auto 1rem auto;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.start-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+@media only screen and (max-width: 310px) {
+  .box-container {
+    font-size: 6px;
     margin: auto;
-    padding: 15px;
+  }
+  .score-board {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .time {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
-.box{
-    width: 22%;
-    height: 100px;
-    padding-bottom: 5px;
-    border: 1px solid white;
-    border-radius: 5%;
+@media only screen and (max-width: 5000px) {
+  .box-container {
+    font-size: 6px;
     margin: auto;
-    opacity: 0;
+  }
+  .score-board {
+    font-size: 1rem;
     text-align: center;
-    line-height: 700%;
-    background-image: url(https://st3.depositphotos.com/7843760/13017/v/950/depositphotos_130175624-stock-illustration-cartoon-cute-mole.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.active{
-    opacity: 1;
-    transition: opacity 1s;
-    transform: translateY(-30px);
-    transition-timing-function: ease-in-out;
-}
-
-.score-board{
-    font-size: 3rem;
+  }
+  .time {
+    font-size: 1rem;
     text-align: center;
-    margin-bottom: 30px;
-}
-
-.time{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.start-button{
-    margin-bottom: 1rem;
-    border: 1px solid white;
-    width: 13%;
-    margin: auto auto 1rem auto;
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer;
-    transition-property: background, color;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-}
-
-.start-button:hover{
-    background-color: white;
-    color: #333;
-}
-
-@media only screen and (max-width: 310px){
-    .box-container{
-        font-size: 6px;
-        margin: auto;
-    }
-    .score-board{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .time{
-        font-size: 1rem;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 5000px){
-    .box-container{
-        font-size: 6px;
-        margin: auto;
-    }
-    .score-board{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .time{
-        font-size: 1rem;
-        text-align: center;
-    }
-    .start-button{
-        width: 27%;
-    }
+  }
+  .start-button {
+    width: 27%;
+  }
 }
