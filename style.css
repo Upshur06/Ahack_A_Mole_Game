@@ -20,35 +20,46 @@ main {
 }
 
 .container {
+
   width: 80%;
 }
 
 .inner-container {
+    
   font-family: "Press Start 2P", cursive;
 }
 
 .box-container{
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
-    height: 40%;
+    width: 80%;
+    height: 490px;
     border: 1px solid rgb(119, 119, 133);
     margin: auto;
+    padding: 15px;
 }
 
 .box{
     width: 22%;
-    height: 30%;
+    height: 100px;
+    padding-bottom: 5px;
     border: 1px solid white;
     border-radius: 5%;
     margin: auto;
     opacity: 0;
     text-align: center;
     line-height: 700%;
+    background-image: url(https://st3.depositphotos.com/7843760/13017/v/950/depositphotos_130175624-stock-illustration-cartoon-cute-mole.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .active{
     opacity: 1;
+    transition: opacity 1s;
+    transform: translateY(-30px);
+    transition-timing-function: ease-in-out;
 }
 
 .score-board{

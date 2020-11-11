@@ -10,6 +10,10 @@ let x1 = "";
 let points = "";
 let restart = true;
 
+//exchange mole with bang effect
+// boxs.style.backgroundImage = "url('https://thumbs.dreamstime.com/z/comic-text-pop-art-style-baam-vector-illustration-82529501.jpg')";
+
+
 startBtn.addEventListener('click',countDown);
 
 const reset = ()=>{
@@ -25,7 +29,6 @@ function start(){
     if(x2 == x1){
         start();
     }
-
     x1=x2;
     document.getElementById(x2).classList.add('active');
 }
